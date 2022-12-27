@@ -9,6 +9,6 @@ platform-asflags-y =
 platform-ldflags-y =
 
 # Blobs to build
-FW_TEXT_START?=0x0
+FW_TEXT_START=0x3EFF0000
 FW_JUMP=y
-FW_JUMP_ADDR?=0x00200000
+FW_JUMP_ADDR=0x50000000

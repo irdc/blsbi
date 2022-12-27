@@ -146,6 +146,7 @@ int clint_cold_timer_init(unsigned long base, u32 hart_count,
 	clint_time_base			= (void *)base;
 	clint_time_val			= (u64 *)(clint_time_base + 0xbff8);
 	clint_time_cmp			= (u64 *)(clint_time_base + 0x4000);
+//	clint_time_cmp			= (u64 *)(clint_time_base + 0xD000);
 
 	/* Override read/write accessors for 64bit MMIO */
 #if __riscv_xlen != 32

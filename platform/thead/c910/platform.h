@@ -5,7 +5,7 @@
 #ifndef _C910_PLATFORM_H_
 #define _C910_PLATFORM_H_
 
-#define C910_HART_COUNT   16
+#define C910_HART_COUNT   1
 #define C910_HART_STACK_SIZE   8192
 
 #define SBI_THEAD_FEATURES	\
@@ -21,7 +21,9 @@
 #define CSR_PLIC_BASE    0xfc1
 #define CSR_MRMR         0x7c6
 #define CSR_MRVBR        0x7c7
+#define CSR_MCOUNTERWEN  0x7c9
 
+#define SBI_EXT_VENDOR_C910_SET_PMU            0x09000001
 #define SBI_EXT_VENDOR_C910_BOOT_OTHER_CORE    0x09000003
 
 #define C910_PLIC_CLINT_OFFSET     0x04000000  /* 64M */
